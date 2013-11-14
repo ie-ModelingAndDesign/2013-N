@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B82388B183469BC006F2474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388A183469BC006F2474 /* Foundation.framework */; };
+		2B82388D183469BC006F2474 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388C183469BC006F2474 /* CoreGraphics.framework */; };
+		2B82388F183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
+		2B823895183469BC006F2474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B823893183469BC006F2474 /* InfoPlist.strings */; };
+		2B823897183469BC006F2474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B823896183469BC006F2474 /* main.m */; };
+		2B82389B183469BC006F2474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B82389A183469BC006F2474 /* AppDelegate.m */; };
+		2B82389E183469BC006F2474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B82389C183469BC006F2474 /* Main.storyboard */; };
+		2B8238A1183469BC006F2474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8238A0183469BC006F2474 /* ViewController.m */; };
+		2B8238A3183469BC006F2474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8238A2183469BC006F2474 /* Images.xcassets */; };
+		2B8238AA183469BC006F2474 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8238A9183469BC006F2474 /* XCTest.framework */; };
+		2B8238AB183469BC006F2474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388A183469BC006F2474 /* Foundation.framework */; };
+		2B8238AC183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
+		2B8238B4183469BC006F2474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B8238B2183469BC006F2474 /* InfoPlist.strings */; };
+		2B8238B6183469BC006F2474 /* JungleTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8238B5183469BC006F2474 /* JungleTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B8238AD183469BC006F2474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B82387F183469BC006F2474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B823886183469BC006F2474;
+			remoteInfo = JungleTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B823887183469BC006F2474 /* JungleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JungleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B82388A183469BC006F2474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B82388C183469BC006F2474 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B82388E183469BC006F2474 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B823892183469BC006F2474 /* JungleTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JungleTimer-Info.plist"; sourceTree = "<group>"; };
+		2B823894183469BC006F2474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B823896183469BC006F2474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B823898183469BC006F2474 /* JungleTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JungleTimer-Prefix.pch"; sourceTree = "<group>"; };
+		2B823899183469BC006F2474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B82389A183469BC006F2474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B82389D183469BC006F2474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B82389F183469BC006F2474 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B8238A0183469BC006F2474 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B8238A2183469BC006F2474 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B8238A8183469BC006F2474 /* JungleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JungleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8238A9183469BC006F2474 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2B8238B1183469BC006F2474 /* JungleTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JungleTimerTests-Info.plist"; sourceTree = "<group>"; };
+		2B8238B3183469BC006F2474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B8238B5183469BC006F2474 /* JungleTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JungleTimerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B823884183469BC006F2474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B82388D183469BC006F2474 /* CoreGraphics.framework in Frameworks */,
+				2B82388F183469BC006F2474 /* UIKit.framework in Frameworks */,
+				2B82388B183469BC006F2474 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B8238A5183469BC006F2474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8238AA183469BC006F2474 /* XCTest.framework in Frameworks */,
+				2B8238AC183469BC006F2474 /* UIKit.framework in Frameworks */,
+				2B8238AB183469BC006F2474 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B82387E183469BC006F2474 = {
+			isa = PBXGroup;
+			children = (
+				2B823890183469BC006F2474 /* JungleTimer */,
+				2B8238AF183469BC006F2474 /* JungleTimerTests */,
+				2B823889183469BC006F2474 /* Frameworks */,
+				2B823888183469BC006F2474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B823888183469BC006F2474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B823887183469BC006F2474 /* JungleTimer.app */,
+				2B8238A8183469BC006F2474 /* JungleTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B823889183469BC006F2474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B82388A183469BC006F2474 /* Foundation.framework */,
+				2B82388C183469BC006F2474 /* CoreGraphics.framework */,
+				2B82388E183469BC006F2474 /* UIKit.framework */,
+				2B8238A9183469BC006F2474 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B823890183469BC006F2474 /* JungleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				2B823899183469BC006F2474 /* AppDelegate.h */,
+				2B82389A183469BC006F2474 /* AppDelegate.m */,
+				2B82389C183469BC006F2474 /* Main.storyboard */,
+				2B82389F183469BC006F2474 /* ViewController.h */,
+				2B8238A0183469BC006F2474 /* ViewController.m */,
+				2B8238A2183469BC006F2474 /* Images.xcassets */,
+				2B823891183469BC006F2474 /* Supporting Files */,
+			);
+			path = JungleTimer;
+			sourceTree = "<group>";
+		};
+		2B823891183469BC006F2474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B823892183469BC006F2474 /* JungleTimer-Info.plist */,
+				2B823893183469BC006F2474 /* InfoPlist.strings */,
+				2B823896183469BC006F2474 /* main.m */,
+				2B823898183469BC006F2474 /* JungleTimer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B8238AF183469BC006F2474 /* JungleTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B8238B5183469BC006F2474 /* JungleTimerTests.m */,
+				2B8238B0183469BC006F2474 /* Supporting Files */,
+			);
+			path = JungleTimerTests;
+			sourceTree = "<group>";
+		};
+		2B8238B0183469BC006F2474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B8238B1183469BC006F2474 /* JungleTimerTests-Info.plist */,
+				2B8238B2183469BC006F2474 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B823886183469BC006F2474 /* JungleTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B8238B9183469BC006F2474 /* Build configuration list for PBXNativeTarget "JungleTimer" */;
+			buildPhases = (
+				2B823883183469BC006F2474 /* Sources */,
+				2B823884183469BC006F2474 /* Frameworks */,
+				2B823885183469BC006F2474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JungleTimer;
+			productName = JungleTimer;
+			productReference = 2B823887183469BC006F2474 /* JungleTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B8238A7183469BC006F2474 /* JungleTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B8238BC183469BC006F2474 /* Build configuration list for PBXNativeTarget "JungleTimerTests" */;
+			buildPhases = (
+				2B8238A4183469BC006F2474 /* Sources */,
+				2B8238A5183469BC006F2474 /* Frameworks */,
+				2B8238A6183469BC006F2474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B8238AE183469BC006F2474 /* PBXTargetDependency */,
+			);
+			name = JungleTimerTests;
+			productName = JungleTimerTests;
+			productReference = 2B8238A8183469BC006F2474 /* JungleTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B82387F183469BC006F2474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tatsuki IHA";
+				TargetAttributes = {
+					2B8238A7183469BC006F2474 = {
+						TestTargetID = 2B823886183469BC006F2474;
+					};
+				};
+			};
+			buildConfigurationList = 2B823882183469BC006F2474 /* Build configuration list for PBXProject "JungleTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B82387E183469BC006F2474;
+			productRefGroup = 2B823888183469BC006F2474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B823886183469BC006F2474 /* JungleTimer */,
+				2B8238A7183469BC006F2474 /* JungleTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B823885183469BC006F2474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8238A3183469BC006F2474 /* Images.xcassets in Resources */,
+				2B823895183469BC006F2474 /* InfoPlist.strings in Resources */,
+				2B82389E183469BC006F2474 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B8238A6183469BC006F2474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8238B4183469BC006F2474 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B823883183469BC006F2474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8238A1183469BC006F2474 /* ViewController.m in Sources */,
+				2B82389B183469BC006F2474 /* AppDelegate.m in Sources */,
+				2B823897183469BC006F2474 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B8238A4183469BC006F2474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8238B6183469BC006F2474 /* JungleTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B8238AE183469BC006F2474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B823886183469BC006F2474 /* JungleTimer */;
+			targetProxy = 2B8238AD183469BC006F2474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B823893183469BC006F2474 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B823894183469BC006F2474 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B82389C183469BC006F2474 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B82389D183469BC006F2474 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B8238B2183469BC006F2474 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B8238B3183469BC006F2474 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B8238B7183469BC006F2474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B8238B8183469BC006F2474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B8238BA183469BC006F2474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JungleTimer/JungleTimer-Prefix.pch";
+				INFOPLIST_FILE = "JungleTimer/JungleTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B8238BB183469BC006F2474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JungleTimer/JungleTimer-Prefix.pch";
+				INFOPLIST_FILE = "JungleTimer/JungleTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2B8238BD183469BC006F2474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JungleTimer.app/JungleTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JungleTimer/JungleTimer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JungleTimerTests/JungleTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2B8238BE183469BC006F2474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JungleTimer.app/JungleTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JungleTimer/JungleTimer-Prefix.pch";
+				INFOPLIST_FILE = "JungleTimerTests/JungleTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B823882183469BC006F2474 /* Build configuration list for PBXProject "JungleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8238B7183469BC006F2474 /* Debug */,
+				2B8238B8183469BC006F2474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B8238B9183469BC006F2474 /* Build configuration list for PBXNativeTarget "JungleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8238BA183469BC006F2474 /* Debug */,
+				2B8238BB183469BC006F2474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B8238BC183469BC006F2474 /* Build configuration list for PBXNativeTarget "JungleTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8238BD183469BC006F2474 /* Debug */,
+				2B8238BE183469BC006F2474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B82387F183469BC006F2474 /* Project object */;
+}
