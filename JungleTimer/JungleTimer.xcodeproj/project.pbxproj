@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1A337F183D9771009FF56B /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A337E183D9771009FF56B /* Timer.m */; };
 		2B82388B183469BC006F2474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388A183469BC006F2474 /* Foundation.framework */; };
 		2B82388D183469BC006F2474 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388C183469BC006F2474 /* CoreGraphics.framework */; };
 		2B82388F183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		2B8238AC183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
 		2B8238B4183469BC006F2474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B8238B2183469BC006F2474 /* InfoPlist.strings */; };
 		2B8238B6183469BC006F2474 /* JungleTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8238B5183469BC006F2474 /* JungleTimerTests.m */; };
+		2BBA04D9183DC92300214FC7 /* Summoner'sRiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA04D8183DC92300214FC7 /* Summoner'sRiftViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B1A337D183D9771009FF56B /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		2B1A337E183D9771009FF56B /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		2B823887183469BC006F2474 /* JungleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JungleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B82388A183469BC006F2474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B82388C183469BC006F2474 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		2B8238B1183469BC006F2474 /* JungleTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JungleTimerTests-Info.plist"; sourceTree = "<group>"; };
 		2B8238B3183469BC006F2474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B8238B5183469BC006F2474 /* JungleTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JungleTimerTests.m; sourceTree = "<group>"; };
+		2BBA04D7183DC92300214FC7 /* Summoner'sRiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Summoner'sRiftViewController.h"; sourceTree = "<group>"; };
+		2BBA04D8183DC92300214FC7 /* Summoner'sRiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Summoner'sRiftViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +121,14 @@
 				2B823899183469BC006F2474 /* AppDelegate.h */,
 				2B82389A183469BC006F2474 /* AppDelegate.m */,
 				2B82389C183469BC006F2474 /* Main.storyboard */,
+				2BBA04D7183DC92300214FC7 /* Summoner'sRiftViewController.h */,
+				2BBA04D8183DC92300214FC7 /* Summoner'sRiftViewController.m */,
 				2B82389F183469BC006F2474 /* ViewController.h */,
 				2B8238A0183469BC006F2474 /* ViewController.m */,
 				2B8238A2183469BC006F2474 /* Images.xcassets */,
 				2B823891183469BC006F2474 /* Supporting Files */,
+				2B1A337D183D9771009FF56B /* Timer.h */,
+				2B1A337E183D9771009FF56B /* Timer.m */,
 			);
 			path = JungleTimer;
 			sourceTree = "<group>";
@@ -252,6 +262,8 @@
 				2B8238A1183469BC006F2474 /* ViewController.m in Sources */,
 				2B82389B183469BC006F2474 /* AppDelegate.m in Sources */,
 				2B823897183469BC006F2474 /* main.m in Sources */,
+				2BBA04D9183DC92300214FC7 /* Summoner'sRiftViewController.m in Sources */,
+				2B1A337F183D9771009FF56B /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +472,7 @@
 				2B8238BB183469BC006F2474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8238BC183469BC006F2474 /* Build configuration list for PBXNativeTarget "JungleTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				2B8238BE183469BC006F2474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
