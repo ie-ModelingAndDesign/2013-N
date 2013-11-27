@@ -66,6 +66,11 @@
                                 <state key="normal" title="P-Red_5:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="BBlue:" destination="RNi-bo-KPY" eventType="touchUpInside" id="iob-Kc-wzk"/>
+                                    <action selector="TimerPRedStart:" destination="RNi-bo-KPY" eventType="touchUpInside" id="ZcF-ts-1xh"/>
+                                    <action selector="pRed:" destination="RNi-bo-KPY" eventType="touchUpInside" id="dfc-nN-4pY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiM-4b-hz7">
                                 <rect key="frame" x="131" y="348" width="88" height="30"/>
@@ -137,6 +142,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="labelBblue" destination="46i-la-IMw" id="c2S-3x-qxc"/>
+                        <outlet property="pRed" destination="Uak-4w-Jls" id="waS-hC-79m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkt-cQ-cvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

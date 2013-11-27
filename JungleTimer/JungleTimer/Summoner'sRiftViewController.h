@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Summoner_sRiftViewController : UIViewController
+- (IBAction)TimerPRedStart:(id)sender;
 
 @end

@@ -13,6 +13,14 @@
     count = 300;
     return self;
 }
+
+-(void)push{
+    if ([timer isValid]) {
+        [self reset];
+    }
+    [self start];
+}
+
 -(void)start{
     timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(action) userInfo:nil repeats:YES];
 }

@@ -7,7 +7,7 @@
 //
 
 #import "Summoner'sRiftViewController.h"
-
+#import "Timer.m"
 @interface Summoner_sRiftViewController ()
 
 @end
@@ -35,4 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)TimerPRedStart:(id)sender {
+    Timer* timer=[[Timer alloc]init];
+    [timer push] ;
+}
 @end
