@@ -14,6 +14,7 @@
     int count;
 }
 - (id) init;
+- (void) push;
 - (void) start;
 - (void) reset;
 @end

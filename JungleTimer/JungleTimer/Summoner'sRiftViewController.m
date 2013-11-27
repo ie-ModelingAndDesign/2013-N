@@ -7,7 +7,7 @@
 //
 
 #import "Summoner'sRiftViewController.h"
-#import "Timer.m"
+#import "Timer.h"
 @interface Summoner_sRiftViewController ()
 
 @end

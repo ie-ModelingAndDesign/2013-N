@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RNi-bo-KPY" kind="modal" id="Qkj-6p-JJ6"/>
+                                    <segue destination="RNi-bo-KPY" kind="modal" id="gF0-Vy-HaV"/>
                                 </connections>
                             </button>
                         </subviews>
