@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Timer : NSObject
 {
+    UILabel *timeStr;
     NSTimer *timer;
     int count;
+    int time;
 }
-- (id) init;
+- (id) init:(UILabel *)label;
 - (void) push;
 - (void) start;
 - (void) reset;

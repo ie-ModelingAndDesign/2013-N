@@ -9,14 +9,20 @@
 #import "Timer.h"
 
 @implementation Timer
--(id)init{
-    count = 300;
+-(id)init:(UILabel *)label time:(int) limit{
+    count = limit;
+    timeStr = label;
+    time = count;
+    timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
     return self;
 }
 
 -(void)push{
-    if ([timer isValid]) {
+    if ([self->timer isValid]) {
         [self reset];
+        count=time;
+        timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
+        return;
     }
     [self start];
 }
@@ -26,15 +32,15 @@
 }
 
 -(void)reset{
-    if([timer isValid]){
-        [timer invalidate];
-    }
+    [timer invalidate];
 }
 
 -(void) action{
     if (count <= 0) {
         [self reset];
+        return;
     }
     count--;
+    timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
 }
 @end

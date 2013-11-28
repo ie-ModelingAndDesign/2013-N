@@ -23,12 +23,31 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RNi-bo-KPY" kind="modal" id="gF0-Vy-HaV"/>
+                                    <segue destination="RNi-bo-KPY" kind="modal" id="1vo-Pj-3xO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDG-jk-CFD">
+                                <rect key="frame" x="136" y="106" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="P-Red_5:00">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="push:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HPA-Fq-P4E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer@P-Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-uM-HjH">
+                                <rect key="frame" x="123" y="144" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="JaL-uM-HjH" id="RET-we-BLb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,7 +56,7 @@
         <!--Summoner'sRift-->
         <scene sceneID="uf8-yP-q4J">
             <objects>
-                <viewController id="RNi-bo-KPY" userLabel="Summoner'sRift" customClass="Summoner_sRiftViewController" sceneMemberID="viewController">
+                <viewController id="RNi-bo-KPY" userLabel="Summoner'sRift" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v35-sG-CRy"/>
                         <viewControllerLayoutGuide type="bottom" id="mkt-1L-iNk"/>
@@ -66,11 +85,6 @@
                                 <state key="normal" title="P-Red_5:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="BBlue:" destination="RNi-bo-KPY" eventType="touchUpInside" id="iob-Kc-wzk"/>
-                                    <action selector="TimerPRedStart:" destination="RNi-bo-KPY" eventType="touchUpInside" id="ZcF-ts-1xh"/>
-                                    <action selector="pRed:" destination="RNi-bo-KPY" eventType="touchUpInside" id="dfc-nN-4pY"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiM-4b-hz7">
                                 <rect key="frame" x="131" y="348" width="88" height="30"/>
@@ -124,7 +138,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer@Baron" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibV-qP-HSH">
-                                <rect key="frame" x="124" y="209" width="103" height="21"/>
+                                <rect key="frame" x="124" y="209" width="103" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -135,9 +149,6 @@
                                 <state key="normal" title="Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="fDC-K8-x5V"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -149,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkt-cQ-cvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="54"/>
+            <point key="canvasLocation" x="841" y="84"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

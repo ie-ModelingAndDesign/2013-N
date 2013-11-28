@@ -39,4 +39,7 @@
     Timer* timer=[[Timer alloc]init];
     [timer push] ;
 }
+
+- (IBAction)hoge:(id)sender {
+}
 @end
