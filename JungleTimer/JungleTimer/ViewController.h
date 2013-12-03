@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Timer.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController{
+    Timer * timer;
+}
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end

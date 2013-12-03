@@ -22,6 +22,7 @@
 		2B8238AC183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
 		2B8238B4183469BC006F2474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B8238B2183469BC006F2474 /* InfoPlist.strings */; };
 		2B8238B6183469BC006F2474 /* JungleTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8238B5183469BC006F2474 /* JungleTimerTests.m */; };
+		2BBA04D9183DC92300214FC7 /* Summoner'sRiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA04D8183DC92300214FC7 /* Summoner'sRiftViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		2B8238B1183469BC006F2474 /* JungleTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JungleTimerTests-Info.plist"; sourceTree = "<group>"; };
 		2B8238B3183469BC006F2474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B8238B5183469BC006F2474 /* JungleTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JungleTimerTests.m; sourceTree = "<group>"; };
+		2BBA04D7183DC92300214FC7 /* Summoner'sRiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Summoner'sRiftViewController.h"; sourceTree = "<group>"; };
+		2BBA04D8183DC92300214FC7 /* Summoner'sRiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Summoner'sRiftViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				2B8238A0183469BC006F2474 /* ViewController.m */,
 				2B8238A2183469BC006F2474 /* Images.xcassets */,
 				2B823891183469BC006F2474 /* Supporting Files */,
+				2B1A337D183D9771009FF56B /* Timer.h */,
+				2B1A337E183D9771009FF56B /* Timer.m */,
 			);
 			path = JungleTimer;
 			sourceTree = "<group>";
@@ -258,6 +263,8 @@
 				2B8238A1183469BC006F2474 /* ViewController.m in Sources */,
 				2B82389B183469BC006F2474 /* AppDelegate.m in Sources */,
 				2B823897183469BC006F2474 /* main.m in Sources */,
+				2BBA04D9183DC92300214FC7 /* Summoner'sRiftViewController.m in Sources */,
+				2B1A337F183D9771009FF56B /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7s armv7 x86_64";
 			};
 			name = Debug;
 		};
@@ -376,6 +384,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7s armv7 x86_64";
 			};
 			name = Release;
 		};
