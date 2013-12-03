@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B552A6E184E7BC70000AB43 /* Summoner'sRift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B552A6D184E7BC70000AB43 /* Summoner'sRift.m */; };
 		2B82388B183469BC006F2474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388A183469BC006F2474 /* Foundation.framework */; };
 		2B82388D183469BC006F2474 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388C183469BC006F2474 /* CoreGraphics.framework */; };
 		2B82388F183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B552A6C184E7BC70000AB43 /* Summoner'sRift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Summoner'sRift.h"; sourceTree = "<group>"; };
+		2B552A6D184E7BC70000AB43 /* Summoner'sRift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Summoner'sRift.m"; sourceTree = "<group>"; };
 		2B823887183469BC006F2474 /* JungleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JungleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B82388A183469BC006F2474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B82388C183469BC006F2474 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 				2B823899183469BC006F2474 /* AppDelegate.h */,
 				2B82389A183469BC006F2474 /* AppDelegate.m */,
 				2B82389C183469BC006F2474 /* Main.storyboard */,
+				2B552A6C184E7BC70000AB43 /* Summoner'sRift.h */,
+				2B552A6D184E7BC70000AB43 /* Summoner'sRift.m */,
 				2B82389F183469BC006F2474 /* ViewController.h */,
 				2B8238A0183469BC006F2474 /* ViewController.m */,
 				2B8238A2183469BC006F2474 /* Images.xcassets */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B552A6E184E7BC70000AB43 /* Summoner'sRift.m in Sources */,
 				2B8238A1183469BC006F2474 /* ViewController.m in Sources */,
 				2B82389B183469BC006F2474 /* AppDelegate.m in Sources */,
 				2B823897183469BC006F2474 /* main.m in Sources */,
@@ -460,6 +466,7 @@
 				2B8238BB183469BC006F2474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8238BC183469BC006F2474 /* Build configuration list for PBXNativeTarget "JungleTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				2B8238BE183469BC006F2474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
