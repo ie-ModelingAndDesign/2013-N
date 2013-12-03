@@ -9,7 +9,7 @@
 #import "Timer.h"
 
 @implementation Timer
--(id)init:(UILabel *)label time:(int) limit{
+-(id)init:(UILabel *)label limit:(int) limit{
     count = limit;
     timeStr = label;
     time = count;

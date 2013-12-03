@@ -13,5 +13,4 @@
     Timer * timer;
 }
 @property (weak, nonatomic) IBOutlet UILabel *label;
-- (IBAction)push:(id)sender;
 @end

@@ -16,7 +16,7 @@
     int count;
     int time;
 }
-- (id) init:(UILabel *)label;
+- (id) init:(UILabel *)label limit:(int) limit;
 - (void) push;
 - (void) start;
 - (void) reset;
