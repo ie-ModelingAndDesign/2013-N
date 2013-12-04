@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RNi-bo-KPY" kind="modal" id="1vo-Pj-3xO"/>
+                                    <segue destination="RNi-bo-KPY" kind="modal" id="Qkj-6p-JJ6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,6 +52,9 @@
                                 <state key="normal" title="Baron_7:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="baronPush:" destination="RNi-bo-KPY" eventType="touchUpInside" id="Fhb-Gg-cl2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0c-7c-5kA">
                                 <rect key="frame" x="221" y="253" width="84" height="30"/>
@@ -59,6 +62,9 @@
                                 <state key="normal" title="P-Blue_5:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pBluePush:" destination="RNi-bo-KPY" eventType="touchUpInside" id="GBM-wk-y8l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uak-4w-Jls">
                                 <rect key="frame" x="222" y="78" width="81" height="30"/>
@@ -66,6 +72,9 @@
                                 <state key="normal" title="P-Red_5:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pRedPush:" destination="RNi-bo-KPY" eventType="touchUpInside" id="tX5-q5-asR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiM-4b-hz7">
                                 <rect key="frame" x="131" y="348" width="88" height="30"/>
@@ -73,6 +82,9 @@
                                 <state key="normal" title="Dragon_6:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dragonPush:" destination="RNi-bo-KPY" eventType="touchUpInside" id="frJ-uB-8Po"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bp-ge-fKk">
                                 <rect key="frame" x="35" y="439" width="82" height="30"/>
@@ -80,6 +92,9 @@
                                 <state key="normal" title="B-Red_5:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bRedPush:" destination="RNi-bo-KPY" eventType="touchUpInside" id="aa8-Gv-wRu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJf-fb-Yb1">
                                 <rect key="frame" x="34" y="253" width="85" height="30"/>
@@ -87,6 +102,9 @@
                                 <state key="normal" title="B-Blue_5:00">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bBluePush:" destination="RNi-bo-KPY" eventType="touchUpInside" id="M8O-No-UFW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer@B-Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xd-ze-zJ4">
                                 <rect key="frame" x="23" y="477" width="107" height="21"/>
@@ -119,7 +137,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer@Baron" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibV-qP-HSH">
-                                <rect key="frame" x="124" y="209" width="103" height="25"/>
+                                <rect key="frame" x="124" y="209" width="103" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -130,18 +148,25 @@
                                 <state key="normal" title="Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="fDC-K8-x5V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="labelBblue" destination="46i-la-IMw" id="c2S-3x-qxc"/>
-                        <outlet property="pRed" destination="Uak-4w-Jls" id="waS-hC-79m"/>
+                        <outlet property="bBlue" destination="q4x-VR-lwf" id="EKC-XZ-URF"/>
+                        <outlet property="bRed" destination="2Xd-ze-zJ4" id="YW0-Hp-ccl"/>
+                        <outlet property="baron" destination="ibV-qP-HSH" id="sXY-GU-Zl2"/>
+                        <outlet property="dragon" destination="f20-fn-FwR" id="GJk-js-4nW"/>
+                        <outlet property="pBlue" destination="eJe-FH-vv8" id="tRc-dj-hgb"/>
+                        <outlet property="pRed" destination="46i-la-IMw" id="yBS-nc-eYy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkt-cQ-cvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841" y="84"/>
+            <point key="canvasLocation" x="821" y="54"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
