@@ -23,6 +23,11 @@
 		2B8238AC183469BC006F2474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388E183469BC006F2474 /* UIKit.framework */; };
 		2B8238B4183469BC006F2474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B8238B2183469BC006F2474 /* InfoPlist.strings */; };
 		2B8238B6183469BC006F2474 /* JungleTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8238B5183469BC006F2474 /* JungleTimerTests.m */; };
+		AA1C2A4E184EF865006A1EA2 /* ancient.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A49184EF865006A1EA2 /* ancient.png */; };
+		AA1C2A4F184EF865006A1EA2 /* dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4A184EF865006A1EA2 /* dragon.png */; };
+		AA1C2A50184EF865006A1EA2 /* elder.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4B184EF865006A1EA2 /* elder.png */; };
+		AA1C2A51184EF865006A1EA2 /* pre-map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */; };
+		AA1C2A52184EF865006A1EA2 /* pre-start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4D184EF865006A1EA2 /* pre-start.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		2B8238B1183469BC006F2474 /* JungleTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JungleTimerTests-Info.plist"; sourceTree = "<group>"; };
 		2B8238B3183469BC006F2474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B8238B5183469BC006F2474 /* JungleTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JungleTimerTests.m; sourceTree = "<group>"; };
+		AA1C2A49184EF865006A1EA2 /* ancient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ancient.png; sourceTree = "<group>"; };
+		AA1C2A4A184EF865006A1EA2 /* dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragon.png; sourceTree = "<group>"; };
+		AA1C2A4B184EF865006A1EA2 /* elder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elder.png; sourceTree = "<group>"; };
+		AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pre-map.jpg"; sourceTree = "<group>"; };
+		AA1C2A4D184EF865006A1EA2 /* pre-start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pre-start.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +138,7 @@
 				2B653C55184ED7DB00216DD9 /* Timer.h */,
 				2B653C56184ED7DB00216DD9 /* Timer.m */,
 				2B8238A2183469BC006F2474 /* Images.xcassets */,
+				AA1C2A48184EF865006A1EA2 /* picture */,
 				2B823891183469BC006F2474 /* Supporting Files */,
 			);
 			path = JungleTimer;
@@ -161,6 +172,18 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		AA1C2A48184EF865006A1EA2 /* picture */ = {
+			isa = PBXGroup;
+			children = (
+				AA1C2A49184EF865006A1EA2 /* ancient.png */,
+				AA1C2A4D184EF865006A1EA2 /* pre-start.jpg */,
+				AA1C2A4A184EF865006A1EA2 /* dragon.png */,
+				AA1C2A4B184EF865006A1EA2 /* elder.png */,
+				AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */,
+			);
+			path = picture;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -238,8 +261,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1C2A4E184EF865006A1EA2 /* ancient.png in Resources */,
+				AA1C2A4F184EF865006A1EA2 /* dragon.png in Resources */,
+				AA1C2A50184EF865006A1EA2 /* elder.png in Resources */,
+				AA1C2A51184EF865006A1EA2 /* pre-map.jpg in Resources */,
 				2B8238A3183469BC006F2474 /* Images.xcassets in Resources */,
 				2B823895183469BC006F2474 /* InfoPlist.strings in Resources */,
+				AA1C2A52184EF865006A1EA2 /* pre-start.jpg in Resources */,
 				2B82389E183469BC006F2474 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
