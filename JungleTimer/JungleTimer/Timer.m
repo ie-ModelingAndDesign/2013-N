@@ -20,8 +20,6 @@
 -(void)push{
     if ([self->timer isValid]) {
         [self reset];
-        count=time;
-        timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
         return;
     }
     [self start];
@@ -33,6 +31,8 @@
 
 -(void)reset{
     [timer invalidate];
+    count=time;
+    timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
 }
 
 -(void) action{
