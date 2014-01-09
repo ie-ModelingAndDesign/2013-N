@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5BDF62187D3248008B050D /* P2PView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BDF61187D3248008B050D /* P2PView.m */; };
 		2B653C57184ED7DB00216DD9 /* Summoner'sRift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B653C54184ED7DB00216DD9 /* Summoner'sRift.m */; };
 		2B653C58184ED7DB00216DD9 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B653C56184ED7DB00216DD9 /* Timer.m */; };
 		2B82388B183469BC006F2474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B82388A183469BC006F2474 /* Foundation.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5BDF60187D3248008B050D /* P2PView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2PView.h; sourceTree = "<group>"; };
+		2B5BDF61187D3248008B050D /* P2PView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2PView.m; sourceTree = "<group>"; };
 		2B653C53184ED7DB00216DD9 /* Summoner'sRift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Summoner'sRift.h"; sourceTree = "<group>"; };
 		2B653C54184ED7DB00216DD9 /* Summoner'sRift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Summoner'sRift.m"; sourceTree = "<group>"; };
 		2B653C55184ED7DB00216DD9 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				2B653C54184ED7DB00216DD9 /* Summoner'sRift.m */,
 				2B653C55184ED7DB00216DD9 /* Timer.h */,
 				2B653C56184ED7DB00216DD9 /* Timer.m */,
+				2B5BDF60187D3248008B050D /* P2PView.h */,
+				2B5BDF61187D3248008B050D /* P2PView.m */,
 				2B8238A2183469BC006F2474 /* Images.xcassets */,
 				AA1C2A48184EF865006A1EA2 /* picture */,
 				2B823891183469BC006F2474 /* Supporting Files */,
@@ -296,6 +301,7 @@
 				2B8238A1183469BC006F2474 /* ViewController.m in Sources */,
 				2B82389B183469BC006F2474 /* AppDelegate.m in Sources */,
 				2B823897183469BC006F2474 /* main.m in Sources */,
+				2B5BDF62187D3248008B050D /* P2PView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
