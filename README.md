@@ -3,4 +3,5 @@
 
 I Mid SuperCarryTeemo!!!!
 
-hoge
+アプリタイトル
+森
