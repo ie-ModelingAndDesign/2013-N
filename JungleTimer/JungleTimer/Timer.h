@@ -11,7 +11,7 @@
 
 @interface Timer : NSObject
 {
-    UILabel *timeStr;
+    UILabel *timeLabel;
     NSTimer *timer;
     int count;
     int time;

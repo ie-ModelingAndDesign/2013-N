@@ -4,6 +4,55 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+        <!--View-->
+        <scene sceneID="bkB-Ct-MtB">
+            <objects>
+                <viewController id="dWh-eJ-0AY" customClass="P2PView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xNg-aj-E4G"/>
+                        <viewControllerLayoutGuide type="bottom" id="722-yA-vaf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bx9-z3-EBn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GQ-5e-qAg">
+                                <rect key="frame" x="112" y="222" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="サーバー">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="advertiserButtonPush:" destination="dWh-eJ-0AY" eventType="touchUpInside" id="hMV-uN-lZX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2k-ER-uzU">
+                                <rect key="frame" x="96" y="285" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="クライアント">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="browserButtonPush:" destination="dWh-eJ-0AY" eventType="touchUpInside" id="EXo-m1-VV2"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3Nl-8D-yuE">
+                                <rect key="frame" x="131" y="149" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="3Nl-8D-yuE" id="yf9-5T-hUj"/>
+                        <outlet property="advertiserButton" destination="3GQ-5e-qAg" id="Avc-5j-DZi"/>
+                        <outlet property="browserButton" destination="V2k-ER-uzU" id="cfm-t0-sMd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uj7-Rj-7a0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-563" y="598"/>
+        </scene>
         <!--start-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -44,6 +93,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="XMf-dc-7Rm" kind="modal" modalTransitionStyle="crossDissolve" id="wmA-hO-4TT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ift-AM-xFV">
+                                <rect key="frame" x="144" y="502" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dWh-eJ-0AY" kind="modal" id="JSc-6Y-HAT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -331,7 +390,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nSg-UC-u6I"/>
         <segue reference="fDC-K8-x5V"/>
+        <segue reference="Qkj-6p-JJ6"/>
     </inferredMetricsTieBreakers>
 </document>
