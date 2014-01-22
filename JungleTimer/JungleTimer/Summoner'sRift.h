@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Timer.h"
+@class P2P;
 
 @interface Summoner_sRift : UIViewController{
-    Timer *pRedTimer;
-    Timer *pBlueTimer;
-    Timer *bRedTimer;
-    Timer *bBlueTimer;
-    Timer *dragonTimer;
-    Timer *baronTimer;
 }
 @property (weak, nonatomic) IBOutlet UILabel *pRed;
 
@@ -28,6 +23,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *dragon;
 
 @property (weak, nonatomic) IBOutlet UILabel *baron;
+
+@property (nonatomic) P2P *p2p;
+@property (nonatomic) Timer *pRedTimer;
+@property (nonatomic) Timer *pBlueTimer;
+@property (nonatomic) Timer *bRedTimer;
+@property (nonatomic) Timer *bBlueTimer;
+@property (nonatomic) Timer *dragonTimer;
+@property (nonatomic) Timer *baronTimer;
+
+- (void)setP2P:(P2P *)p2p;
 
 - (IBAction)pRedPush:(id)sender;
 

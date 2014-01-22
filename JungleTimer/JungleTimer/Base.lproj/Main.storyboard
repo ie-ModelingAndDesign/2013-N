@@ -236,7 +236,7 @@
         <!--Summoner'sRift-->
         <scene sceneID="uf8-yP-q4J">
             <objects>
-                <viewController id="RNi-bo-KPY" userLabel="Summoner'sRift" customClass="Summoner_sRift" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="summoner" id="RNi-bo-KPY" userLabel="Summoner'sRift" customClass="Summoner_sRift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v35-sG-CRy"/>
                         <viewControllerLayoutGuide type="bottom" id="mkt-1L-iNk"/>

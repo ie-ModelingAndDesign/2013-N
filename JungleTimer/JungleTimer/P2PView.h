@@ -8,16 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
+#import "P2P.h"
 
-@interface P2PView : UIViewController <MCBrowserViewControllerDelegate,
-MCSessionDelegate>
+@interface P2PView : UIViewController <MCBrowserViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *advertiserButton;
 @property (weak, nonatomic) IBOutlet UIButton *browserButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
 
-@property(nonatomic,strong) MCPeerID *peerID;
-@property(nonatomic,strong) MCSession *session;
-@property(nonatomic,strong) MCAdvertiserAssistant *advertiserAssistant;
+@property (nonatomic) P2P *p2p;
 @property(nonatomic,strong) MCBrowserViewController *browserView;
 - (IBAction)advertiserButtonPush:(id)sender;
 - (IBAction)browserButtonPush:(id)sender;

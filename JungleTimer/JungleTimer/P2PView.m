@@ -7,6 +7,7 @@
 //
 
 #import "P2PView.h"
+#import "Summoner'sRift.h"
 @import MultipeerConnectivity;
 @interface P2PView ()
 
@@ -29,6 +30,8 @@
 	// Do any additional setup after loading the view.
     [_activityView startAnimating];
     _activityView.hidden = YES;
+    _p2p = [P2P alloc];
+    _p2p.view =[self.storyboard instantiateViewControllerWithIdentifier:@"summoner"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,25 +41,16 @@
 }
 - (IBAction)advertiserButtonPush:(id)sender
 {
-    _peerID =[[MCPeerID alloc] initWithDisplayName:@"Advertiser Name"];
-    _session=[[MCSession alloc] initWithPeer:_peerID];
-    _session.delegate = self;
-    _advertiserAssistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"jungletimer"
-                                                                discoveryInfo:nil
-                                                                      session:_session];
-    [_advertiserAssistant start];
+    [_p2p advertiser];
     _advertiserButton.hidden = YES;
     _browserButton.hidden = YES;
     _activityView.hidden = NO;
 }
 
 - (IBAction)browserButtonPush:(id)sender {
-    _peerID = [[MCPeerID alloc] initWithDisplayName:@"Browser Name"];
-    _session = [[MCSession alloc] initWithPeer:_peerID];
-    _session.delegate = self;
-    
+    [_p2p browser];
     _browserView = [[MCBrowserViewController alloc] initWithServiceType:@"jungletimer"
-                                                                session:_session];
+                                                                session:_p2p.session];
     _browserView.delegate = self;
     [self presentViewController:_browserView animated:YES completion:nil];
     _advertiserButton.hidden = YES;
@@ -67,7 +61,10 @@
 - (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController {
     [self dismissViewControllerAnimated:YES completion:^{
         [_browserView.browser stopBrowsingForPeers];
+        [_p2p.view setP2P:_p2p];
+        [self presentModalViewController:_p2p.view animated:YES];
     }];
+    
 }
 
 - (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController {
@@ -76,73 +73,5 @@
         _advertiserButton.hidden = NO;
         _browserButton.hidden = NO;
     }];
-}
-
-
-- (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state {
-    switch (state) {
-        case MCSessionStateConnected: {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                _activityView.hidden = YES;
-            });
-            
-            // This line only necessary for the advertiser. We want to stop advertising our services
-            // to other browsers when we successfully connect to one.
-            [_advertiserAssistant stop];
-            break;
-        }
-        case MCSessionStateNotConnected: {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                _advertiserButton.hidden = NO;
-                _browserButton.hidden = NO;
-            });
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-- (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID {
-    NSPropertyListFormat format;
-    NSDictionary *receivedData = [NSPropertyListSerialization propertyListWithData:data
-                                                                           options:0
-                                                                            format:&format
-                                                                             error:NULL];
-    NSString *message = receivedData[@"message"];
-    if ([message length]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *messageAlert = [[UIAlertView alloc] initWithTitle:@"Received message"
-                                                                   message:message
-                                                                  delegate:self
-                                                         cancelButtonTitle:@"OK"
-                                                         otherButtonTitles:nil];
-            [messageAlert show];
-        });
-    }
-}
-
-// Required MCSessionDelegate protocol methods but are unused in this application.
-
-- (void)                      session:(MCSession *)session
-    didStartReceivingResourceWithName:(NSString *)resourceName
-                             fromPeer:(MCPeerID *)peerID
-                         withProgress:(NSProgress *)progress {
-    
-}
-
-- (void)     session:(MCSession *)session
-    didReceiveStream:(NSInputStream *)stream
-            withName:(NSString *)streamName
-            fromPeer:(MCPeerID *)peerID {
-    
-}
-
-- (void)                       session:(MCSession *)session
-    didFinishReceivingResourceWithName:(NSString *)resourceName
-                              fromPeer:(MCPeerID *)peerID
-                                 atURL:(NSURL *)localURL
-                             withError:(NSError *)error {
-    
 }
 @end
