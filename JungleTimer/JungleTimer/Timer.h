@@ -11,7 +11,7 @@
 
 @interface Timer : NSObject
 {
-    UILabel *timeStr;
+    UILabel *timeLabel;
     NSTimer *timer;
     int count;
     int time;
@@ -20,4 +20,5 @@
 - (void) push;
 - (void) start;
 - (void) reset;
+- (void) action;
 @end

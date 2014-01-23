@@ -10,10 +10,10 @@
 
 @implementation Timer
 -(id)init:(UILabel *)label limit:(int) limit{
+    timeLabel = label;
     count = limit;
-    timeStr = label;
     time = count;
-    timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
+    timeLabel.text = [NSString stringWithFormat:count%60<10?@"%d:0%d":@"%d:%d",count/60,count%60];
     return self;
 }
 
@@ -32,7 +32,7 @@
 -(void)reset{
     [timer invalidate];
     count=time;
-    timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
+    timeLabel.text = [NSString stringWithFormat:count%60<10?@"%d:0%d":@"%d:%d",count/60,count%60];
 }
 
 -(void) action{
@@ -41,6 +41,6 @@
         return;
     }
     count--;
-    timeStr.text = [NSString stringWithFormat:@"%d:%2d",count/60,count%60];
+    timeLabel.text = [NSString stringWithFormat:count%60<10?@"%d:0%d":@"%d:%d",count/60,count%60];
 }
 @end
