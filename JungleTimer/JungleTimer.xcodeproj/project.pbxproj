@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B58AC4E1890572A008D6FF2 /* P2P.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B58AC4D1890572A008D6FF2 /* P2P.m */; };
+		2B5A3E8D1890CC9800BB7F97 /* P2P.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A3E8C1890CC9800BB7F97 /* P2P.m */; };
 		2B5BDF62187D3248008B050D /* P2PView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BDF61187D3248008B050D /* P2PView.m */; };
 		2B653C57184ED7DB00216DD9 /* Summoner'sRift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B653C54184ED7DB00216DD9 /* Summoner'sRift.m */; };
 		2B653C58184ED7DB00216DD9 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B653C56184ED7DB00216DD9 /* Timer.m */; };
@@ -45,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B58AC4C1890572A008D6FF2 /* P2P.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = P2P.h; path = ../P2P.h; sourceTree = "<group>"; };
-		2B58AC4D1890572A008D6FF2 /* P2P.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = P2P.m; path = ../P2P.m; sourceTree = "<group>"; };
+		2B5A3E8B1890CC9800BB7F97 /* P2P.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2P.h; sourceTree = "<group>"; };
+		2B5A3E8C1890CC9800BB7F97 /* P2P.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2P.m; sourceTree = "<group>"; };
 		2B5BDF60187D3248008B050D /* P2PView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2PView.h; sourceTree = "<group>"; };
 		2B5BDF61187D3248008B050D /* P2PView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2PView.m; sourceTree = "<group>"; };
 		2B653C53184ED7DB00216DD9 /* Summoner'sRift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Summoner'sRift.h"; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		2B823890183469BC006F2474 /* JungleTimer */ = {
 			isa = PBXGroup;
 			children = (
-				2B58AC4C1890572A008D6FF2 /* P2P.h */,
-				2B58AC4D1890572A008D6FF2 /* P2P.m */,
+				2B5A3E8B1890CC9800BB7F97 /* P2P.h */,
+				2B5A3E8C1890CC9800BB7F97 /* P2P.m */,
 				2B823899183469BC006F2474 /* AppDelegate.h */,
 				2B82389A183469BC006F2474 /* AppDelegate.m */,
 				2B82389C183469BC006F2474 /* Main.storyboard */,
@@ -310,9 +310,9 @@
 			files = (
 				2B653C58184ED7DB00216DD9 /* Timer.m in Sources */,
 				2B653C57184ED7DB00216DD9 /* Summoner'sRift.m in Sources */,
+				2B5A3E8D1890CC9800BB7F97 /* P2P.m in Sources */,
 				2B8238A1183469BC006F2474 /* ViewController.m in Sources */,
 				2B82389B183469BC006F2474 /* AppDelegate.m in Sources */,
-				2B58AC4E1890572A008D6FF2 /* P2P.m in Sources */,
 				2B823897183469BC006F2474 /* main.m in Sources */,
 				2B5BDF62187D3248008B050D /* P2PView.m in Sources */,
 			);
