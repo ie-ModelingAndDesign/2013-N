@@ -63,6 +63,21 @@
             if ([message  isEqual: @"pRed"]){
                 [_view.pRedTimer push];
             }
+            if ([message  isEqual: @"pBlue"]){
+                [_view.pBlueTimer push];
+            }
+            if ([message  isEqual: @"bRed"]){
+                [_view.bRedTimer push];
+            }
+            if ([message  isEqual: @"bBlue"]){
+                [_view.bBlueTimer push];
+            }
+            if ([message  isEqual: @"dragon"]){
+                [_view.dragonTimer push];
+            }
+            if ([message  isEqual: @"baron"]){
+                [_view.baronTimer push];
+            }
         });
 }
 

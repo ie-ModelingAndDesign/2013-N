@@ -40,6 +40,16 @@
                                 <rect key="frame" x="131" y="149" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRf-c5-csN">
+                                <rect key="frame" x="112" y="397" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="hoge">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Test:" destination="dWh-eJ-0AY" eventType="touchUpInside" id="R5K-Fi-pfP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -373,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkt-cQ-cvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="45"/>
+            <point key="canvasLocation" x="-202" y="145"/>
         </scene>
     </scenes>
     <resources>
@@ -391,6 +401,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fDC-K8-x5V"/>
-        <segue reference="Qkj-6p-JJ6"/>
+        <segue reference="nSg-UC-u6I"/>
     </inferredMetricsTieBreakers>
 </document>

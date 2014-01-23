@@ -19,4 +19,5 @@
 @property(nonatomic,strong) MCBrowserViewController *browserView;
 - (IBAction)advertiserButtonPush:(id)sender;
 - (IBAction)browserButtonPush:(id)sender;
+- (IBAction)Test:(id)sender;
 @end

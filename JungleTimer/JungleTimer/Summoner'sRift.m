@@ -64,7 +64,7 @@
 
 - (IBAction)bBluePush:(id)sender {
     [_bBlueTimer push];
-    [_p2p sendData:@"pblue"];
+    [_p2p sendData:@"bBlue"];
 }
 
 

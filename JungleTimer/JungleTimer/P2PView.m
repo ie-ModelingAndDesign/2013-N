@@ -57,6 +57,10 @@
     _browserButton.hidden = YES;
 }
 
+- (IBAction)Test:(id)sender {
+    [self presentModalViewController:_p2p.view animated:YES];
+}
+
 
 - (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController {
     [self dismissViewControllerAnimated:YES completion:^{

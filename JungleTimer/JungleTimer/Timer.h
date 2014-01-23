@@ -20,4 +20,5 @@
 - (void) push;
 - (void) start;
 - (void) reset;
+- (void) action;
 @end
