@@ -11,7 +11,7 @@
 
 @implementation P2P
 - (void)advertiser{
-    _peerID =[[MCPeerID alloc] initWithDisplayName:@"Advertiser Name"];
+    _peerID =[[MCPeerID alloc] initWithDisplayName:@"MyDevice"];
     _session=[[MCSession alloc] initWithPeer:_peerID];
     _session.delegate = self;
     _advertiserAssistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"jungletimer"
@@ -21,7 +21,7 @@
 }
 
 - (void)browser{
-    _peerID = [[MCPeerID alloc] initWithDisplayName:@"Browser Name"];
+    _peerID = [[MCPeerID alloc] initWithDisplayName:@"MyDevice"];
     _session = [[MCSession alloc] initWithPeer:_peerID];
     _session.delegate = self;
 }
@@ -29,7 +29,7 @@
 -(void)sendData:(NSString *)str{
     NSData *data =[str dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
-    [self.session sendData:data
+    [_session sendData:data
                    toPeers:[_session connectedPeers]
                   withMode:MCSessionSendDataReliable
                      error:&error];

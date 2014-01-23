@@ -31,7 +31,8 @@
     [_activityView startAnimating];
     _activityView.hidden = YES;
     _p2p = [P2P alloc];
-    _p2p.view =[self.storyboard instantiateViewControllerWithIdentifier:@"summoner"];
+    _p2p.view = [self.storyboard instantiateViewControllerWithIdentifier:@"summoner"];
+    [_p2p.view setP2P:_p2p];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,7 +66,6 @@
 - (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController {
     [self dismissViewControllerAnimated:YES completion:^{
         [_browserView.browser stopBrowsingForPeers];
-        [_p2p.view setP2P:_p2p];
         [self presentModalViewController:_p2p.view animated:YES];
     }];
     

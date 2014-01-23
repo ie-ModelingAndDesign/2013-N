@@ -245,6 +245,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tatsuki IHA";
 				TargetAttributes = {
+					2B823886183469BC006F2474 = {
+						DevelopmentTeam = S3UNBN5SS6;
+					};
 					2B8238A7183469BC006F2474 = {
 						TestTargetID = 2B823886183469BC006F2474;
 					};
@@ -434,10 +437,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JungleTimer/JungleTimer-Prefix.pch";
 				INFOPLIST_FILE = "JungleTimer/JungleTimer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,10 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JungleTimer/JungleTimer-Prefix.pch";
 				INFOPLIST_FILE = "JungleTimer/JungleTimer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
