@@ -7,7 +7,6 @@
 //
 
 #import "P2PView.h"
-#import "Summoner'sRift.h"
 @import MultipeerConnectivity;
 @interface P2PView ()
 
@@ -31,8 +30,7 @@
     [_activityView startAnimating];
     _activityView.hidden = YES;
     _p2p = [P2P alloc];
-    _p2p.view = [self.storyboard instantiateViewControllerWithIdentifier:@"summoner"];
-    [_p2p.view setP2P:_p2p];
+    [_p2p setView:[self.storyboard instantiateViewControllerWithIdentifier:@"summoner"]];
 }
 
 - (void)didReceiveMemoryWarning

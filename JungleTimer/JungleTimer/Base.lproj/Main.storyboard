@@ -91,7 +91,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pre-start.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kp7-JI-95R">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kp7-JI-95R">
                                 <rect key="frame" x="40" y="146" width="240" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -396,9 +396,9 @@
         <image name="ancient.png" width="104" height="108"/>
         <image name="dragon.png" width="124" height="152"/>
         <image name="elder.png" width="128" height="136"/>
+        <image name="icon.jpg" width="512" height="512"/>
         <image name="map.png" width="512" height="700"/>
         <image name="orgdemeera.png" width="218" height="216"/>
-        <image name="pre-start.jpg" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -17,6 +17,7 @@
 @property(nonatomic,strong) MCAdvertiserAssistant *advertiserAssistant;
 @property(nonatomic,strong) MCBrowserViewController *browserView;
 @property(nonatomic) Summoner_sRift *view;
+- (void)setView:(Summoner_sRift *)view;
 - (void)advertiser;
 - (void)browser;
 - (void)sendData:(NSString *)str;

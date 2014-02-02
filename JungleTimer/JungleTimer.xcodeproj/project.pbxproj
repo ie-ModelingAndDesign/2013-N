@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B576A15189EB6FC0042B64D /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B576A13189EB6FC0042B64D /* icon.jpg */; };
+		2B576A16189EB6FC0042B64D /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B576A14189EB6FC0042B64D /* main.jpg */; };
 		2B5A3E8D1890CC9800BB7F97 /* P2P.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A3E8C1890CC9800BB7F97 /* P2P.m */; };
 		2B5BDF62187D3248008B050D /* P2PView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BDF61187D3248008B050D /* P2PView.m */; };
 		2B653C57184ED7DB00216DD9 /* Summoner'sRift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B653C54184ED7DB00216DD9 /* Summoner'sRift.m */; };
@@ -30,7 +32,6 @@
 		AA1C2A4F184EF865006A1EA2 /* dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4A184EF865006A1EA2 /* dragon.png */; };
 		AA1C2A50184EF865006A1EA2 /* elder.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4B184EF865006A1EA2 /* elder.png */; };
 		AA1C2A51184EF865006A1EA2 /* pre-map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */; };
-		AA1C2A52184EF865006A1EA2 /* pre-start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4D184EF865006A1EA2 /* pre-start.jpg */; };
 		AA1C2A5418500DBC006A1EA2 /* orgdemeera.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A5318500DBC006A1EA2 /* orgdemeera.png */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B576A13189EB6FC0042B64D /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		2B576A14189EB6FC0042B64D /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main.jpg; sourceTree = "<group>"; };
 		2B5A3E8B1890CC9800BB7F97 /* P2P.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2P.h; sourceTree = "<group>"; };
 		2B5A3E8C1890CC9800BB7F97 /* P2P.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2P.m; sourceTree = "<group>"; };
 		2B5BDF60187D3248008B050D /* P2PView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2PView.h; sourceTree = "<group>"; };
@@ -77,7 +80,6 @@
 		AA1C2A4A184EF865006A1EA2 /* dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragon.png; sourceTree = "<group>"; };
 		AA1C2A4B184EF865006A1EA2 /* elder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elder.png; sourceTree = "<group>"; };
 		AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pre-map.jpg"; sourceTree = "<group>"; };
-		AA1C2A4D184EF865006A1EA2 /* pre-start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pre-start.jpg"; sourceTree = "<group>"; };
 		AA1C2A5318500DBC006A1EA2 /* orgdemeera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orgdemeera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,8 +194,9 @@
 			children = (
 				68C61124189053F5000EFE4C /* map.png */,
 				AA1C2A49184EF865006A1EA2 /* ancient.png */,
-				AA1C2A4D184EF865006A1EA2 /* pre-start.jpg */,
 				AA1C2A5318500DBC006A1EA2 /* orgdemeera.png */,
+				2B576A13189EB6FC0042B64D /* icon.jpg */,
+				2B576A14189EB6FC0042B64D /* main.jpg */,
 				AA1C2A4A184EF865006A1EA2 /* dragon.png */,
 				AA1C2A4B184EF865006A1EA2 /* elder.png */,
 				AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */,
@@ -286,9 +289,10 @@
 				AA1C2A51184EF865006A1EA2 /* pre-map.jpg in Resources */,
 				68C61125189053F5000EFE4C /* map.png in Resources */,
 				2B8238A3183469BC006F2474 /* Images.xcassets in Resources */,
+				2B576A15189EB6FC0042B64D /* icon.jpg in Resources */,
 				2B823895183469BC006F2474 /* InfoPlist.strings in Resources */,
-				AA1C2A52184EF865006A1EA2 /* pre-start.jpg in Resources */,
 				2B82389E183469BC006F2474 /* Main.storyboard in Resources */,
+				2B576A16189EB6FC0042B64D /* main.jpg in Resources */,
 				AA1C2A5418500DBC006A1EA2 /* orgdemeera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +403,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "358ECB3E-1443-4458-9BD8-078B67188E41";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -431,6 +436,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "358ECB3E-1443-4458-9BD8-078B67188E41";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

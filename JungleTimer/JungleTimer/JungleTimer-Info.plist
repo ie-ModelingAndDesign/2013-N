@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>omeetyrracrepusdimiteamN.${PRODUCT_NAME:identifier}</string>
+	<string>jp.ac.u-ryukyu.ie.e125716.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

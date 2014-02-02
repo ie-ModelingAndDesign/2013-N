@@ -10,6 +10,11 @@
 #import "Summoner'sRift.h"
 
 @implementation P2P
+
+- (void) setView:(Summoner_sRift *)view{
+    _view = view;
+    [_view setP2P:self];
+}
 - (void)advertiser{
     _peerID =[[MCPeerID alloc] initWithDisplayName:@"MyDevice"];
     _session=[[MCSession alloc] initWithPeer:_peerID];
@@ -30,9 +35,9 @@
     NSData *data =[str dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
     [_session sendData:data
-                   toPeers:[_session connectedPeers]
-                  withMode:MCSessionSendDataReliable
-                     error:&error];
+               toPeers:[_session connectedPeers]
+              withMode:MCSessionSendDataReliable
+                 error:&error];
 }
 
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state {
@@ -48,6 +53,12 @@
         }
         case MCSessionStateNotConnected: {
             dispatch_async(dispatch_get_main_queue(), ^{
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Demo Alert"
+                                                                message:@"demo appl"
+                                                               delegate:self
+                                                      cancelButtonTitle:nil
+                                                      otherButtonTitles:@"OK", nil];
+                [alert show];
             });
             break;
         }
@@ -56,29 +67,28 @@
     }
 }
 
-
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID {
     NSString *message =[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if ([message  isEqual: @"pRed"]){
-                [_view.pRedTimer push];
-            }
-            if ([message  isEqual: @"pBlue"]){
-                [_view.pBlueTimer push];
-            }
-            if ([message  isEqual: @"bRed"]){
-                [_view.bRedTimer push];
-            }
-            if ([message  isEqual: @"bBlue"]){
-                [_view.bBlueTimer push];
-            }
-            if ([message  isEqual: @"dragon"]){
-                [_view.dragonTimer push];
-            }
-            if ([message  isEqual: @"baron"]){
-                [_view.baronTimer push];
-            }
-        });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if ([message  isEqual: @"pRed"]){
+            [_view.pRedTimer push];
+        }
+        if ([message  isEqual: @"pBlue"]){
+            [_view.pBlueTimer push];
+        }
+        if ([message  isEqual: @"bRed"]){
+            [_view.bRedTimer push];
+        }
+        if ([message  isEqual: @"bBlue"]){
+            [_view.bBlueTimer push];
+        }
+        if ([message  isEqual: @"dragon"]){
+            [_view.dragonTimer push];
+        }
+        if ([message  isEqual: @"baron"]){
+            [_view.baronTimer push];
+        }
+    });
 }
 
 // Required MCSessionDelegate protocol methods but are unused in this application.
