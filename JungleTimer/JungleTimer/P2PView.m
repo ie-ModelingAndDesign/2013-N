@@ -29,6 +29,7 @@
 	// Do any additional setup after loading the view.
     [_activityView startAnimating];
     _activityView.hidden = YES;
+    _goViewButton.hidden = YES;
     _p2p = [P2P alloc];
     [_p2p setView:[self.storyboard instantiateViewControllerWithIdentifier:@"summoner"]];
 }
@@ -43,7 +44,9 @@
     [_p2p advertiser];
     _advertiserButton.hidden = YES;
     _browserButton.hidden = YES;
+    _goViewButton.hidden = YES;
     _activityView.hidden = NO;
+    _goViewButton.hidden = NO;
 }
 
 - (IBAction)browserButtonPush:(id)sender {
@@ -53,19 +56,15 @@
     _browserView.delegate = self;
     [self presentViewController:_browserView animated:YES completion:nil];
     _advertiserButton.hidden = YES;
-    _browserButton.hidden = YES;
-}
-
-- (IBAction)Test:(id)sender {
-    [self presentModalViewController:_p2p.view animated:YES];
+    _browserButton.hidden = NO;
 }
 
 
 - (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController {
     [self dismissViewControllerAnimated:YES completion:^{
         [_browserView.browser stopBrowsingForPeers];
-        [self presentModalViewController:_p2p.view animated:YES];
     }];
+    _goViewButton.hidden = NO;
     
 }
 
@@ -75,5 +74,8 @@
         _advertiserButton.hidden = NO;
         _browserButton.hidden = NO;
     }];
+}
+- (IBAction)goViewPush:(id)sender {
+    [self presentModalViewController:_p2p.view animated:YES];
 }
 @end
