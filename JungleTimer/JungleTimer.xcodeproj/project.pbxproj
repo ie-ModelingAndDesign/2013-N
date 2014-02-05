@@ -33,6 +33,8 @@
 		AA1C2A50184EF865006A1EA2 /* elder.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4B184EF865006A1EA2 /* elder.png */; };
 		AA1C2A51184EF865006A1EA2 /* pre-map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */; };
 		AA1C2A5418500DBC006A1EA2 /* orgdemeera.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1C2A5318500DBC006A1EA2 /* orgdemeera.png */; };
+		AA95311F18A227FA0042C4E0 /* amazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA95311E18A227FA0042C4E0 /* amazon.jpg */; };
+		AA95312118A228F30042C4E0 /* amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA95312018A228F30042C4E0 /* amazon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		AA1C2A4B184EF865006A1EA2 /* elder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elder.png; sourceTree = "<group>"; };
 		AA1C2A4C184EF865006A1EA2 /* pre-map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pre-map.jpg"; sourceTree = "<group>"; };
 		AA1C2A5318500DBC006A1EA2 /* orgdemeera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orgdemeera.png; sourceTree = "<group>"; };
+		AA95311E18A227FA0042C4E0 /* amazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amazon.jpg; sourceTree = "<group>"; };
+		AA95312018A228F30042C4E0 /* amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amazon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 				68C61124189053F5000EFE4C /* map.png */,
 				AA1C2A49184EF865006A1EA2 /* ancient.png */,
 				AA1C2A5318500DBC006A1EA2 /* orgdemeera.png */,
+				AA95312018A228F30042C4E0 /* amazon.png */,
+				AA95311E18A227FA0042C4E0 /* amazon.jpg */,
 				2B576A13189EB6FC0042B64D /* icon.jpg */,
 				2B576A14189EB6FC0042B64D /* main.jpg */,
 				AA1C2A4A184EF865006A1EA2 /* dragon.png */,
@@ -286,6 +292,7 @@
 				AA1C2A4E184EF865006A1EA2 /* ancient.png in Resources */,
 				AA1C2A4F184EF865006A1EA2 /* dragon.png in Resources */,
 				AA1C2A50184EF865006A1EA2 /* elder.png in Resources */,
+				AA95312118A228F30042C4E0 /* amazon.png in Resources */,
 				AA1C2A51184EF865006A1EA2 /* pre-map.jpg in Resources */,
 				68C61125189053F5000EFE4C /* map.png in Resources */,
 				2B8238A3183469BC006F2474 /* Images.xcassets in Resources */,
@@ -294,6 +301,7 @@
 				2B82389E183469BC006F2474 /* Main.storyboard in Resources */,
 				2B576A16189EB6FC0042B64D /* main.jpg in Resources */,
 				AA1C2A5418500DBC006A1EA2 /* orgdemeera.png in Resources */,
+				AA95311F18A227FA0042C4E0 /* amazon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
