@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *advertiserButton;
 @property (weak, nonatomic) IBOutlet UIButton *browserButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
-
 @property (nonatomic) P2P *p2p;
 @property(nonatomic,strong) MCBrowserViewController *browserView;
 - (IBAction)advertiserButtonPush:(id)sender;

@@ -15,7 +15,6 @@
 @property(nonatomic,strong) MCPeerID *peerID;
 @property(nonatomic,strong) MCSession *session;
 @property(nonatomic,strong) MCAdvertiserAssistant *advertiserAssistant;
-@property(nonatomic,strong) MCBrowserViewController *browserView;
 @property(nonatomic) Summoner_sRift *view;
 - (void)setView:(Summoner_sRift *)view;
 - (void)advertiser;
