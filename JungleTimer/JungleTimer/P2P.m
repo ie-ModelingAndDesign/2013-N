@@ -53,8 +53,8 @@
         }
         case MCSessionStateNotConnected: {
             dispatch_async(dispatch_get_main_queue(), ^{
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Demo Alert"
-                                                                message:@"demo appl"
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ConnectionError"
+                                                                message:@"通信が切断されました"
                                                                delegate:self
                                                       cancelButtonTitle:nil
                                                       otherButtonTitles:@"OK", nil];

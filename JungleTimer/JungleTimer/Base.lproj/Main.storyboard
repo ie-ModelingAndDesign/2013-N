@@ -31,6 +31,12 @@
                                     <segue destination="RNi-bo-KPY" kind="modal" modalTransitionStyle="crossDissolve" id="Qkj-6p-JJ6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="森" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUq-2Q-sxY">
+                                <rect key="frame" x="151" y="20" width="18" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd8-xu-dmD">
                                 <rect key="frame" x="116" y="455" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,15 +45,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XMf-dc-7Rm" kind="modal" modalTransitionStyle="crossDissolve" id="wmA-hO-4TT"/>
+                                    <segue destination="XMf-dc-7Rm" kind="modal" id="8JB-eX-qdo"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cik-rp-xTc">
-                                <rect key="frame" x="216" y="55" width="104" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="amazon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="227" y="125"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View-->
         <scene sceneID="2b5-Qd-Q5b">
             <objects>
-                <tableViewController id="XMf-dc-7Rm" sceneMemberID="viewController">
+                <tableViewController id="XMf-dc-7Rm" customClass="P2PView" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Tep-cz-OkJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +107,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="RNi-bo-KPY" kind="modal" id="w9p-eg-nGk"/>
+                                                        <action selector="browserButtonPush:" destination="XMf-dc-7Rm" eventType="touchUpInside" id="I1i-ut-y1H"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -134,11 +133,11 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="RNi-bo-KPY" kind="modal" id="Jae-nZ-Cyp"/>
+                                                        <action selector="advertiserButtonPush:" destination="XMf-dc-7Rm" eventType="touchUpInside" id="WHs-wB-BER"/>
                                                     </connections>
                                                 </button>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zT9-0Q-MTx">
-                                                    <rect key="frame" x="251" y="3" width="37" height="37"/>
+                                                    <rect key="frame" x="218" y="3" width="37" height="37"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </activityIndicatorView>
                                             </subviews>
@@ -158,6 +157,18 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7j-98-cUn" id="REW-66-kfM">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBF-8r-H0e">
+                                                    <rect key="frame" x="68" y="7" width="204" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Welcome to Summoner's Rift!">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="goViewPush:" destination="XMf-dc-7Rm" eventType="touchUpInside" id="iY3-nb-mcU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -168,6 +179,12 @@
                             <outlet property="delegate" destination="XMf-dc-7Rm" id="ML6-gA-NrX"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="activityView" destination="zT9-0Q-MTx" id="KrL-c7-fF9"/>
+                        <outlet property="advertiserButton" destination="Fp7-Xh-NbS" id="0at-3W-318"/>
+                        <outlet property="browserButton" destination="iCy-p4-Nro" id="mIv-rN-ffi"/>
+                        <outlet property="goViewButton" destination="XBF-8r-H0e" id="gKF-nT-jUL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6d-Li-ahd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,7 +340,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="amazon.png" width="507" height="508"/>
         <image name="ancient.png" width="104" height="108"/>
         <image name="dragon.png" width="124" height="152"/>
         <image name="elder.png" width="128" height="136"/>
@@ -337,7 +353,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fDC-K8-x5V"/>
-        <segue reference="Qkj-6p-JJ6"/>
+        <segue reference="pUj-ah-6Rb"/>
     </inferredMetricsTieBreakers>
 </document>
