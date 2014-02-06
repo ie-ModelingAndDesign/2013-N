@@ -28,12 +28,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _pRedTimer = [[Timer alloc]init:self.pRed limit:300];
-    _pBlueTimer = [[Timer alloc]init:self.pBlue limit:300];
-    _bRedTimer = [[Timer alloc]init:self.bRed limit:300];
-    _bBlueTimer = [[Timer alloc]init:self.bBlue limit:300];
-    _dragonTimer = [[Timer alloc]init:self.dragon limit:360];
-    _baronTimer = [[Timer alloc]init:self.baron limit:420];
+    _pRedTimer = [[Timer alloc]init:self.pRed limit:300  button:_pRedButton buttonImage:@"elder.png" buttonClearImage:@"elderi.png"];
+    _pBlueTimer = [[Timer alloc]init:self.pBlue limit:300 button:_pBlueButton buttonImage:@"ancient.png" buttonClearImage:@"ancienti.png"];
+    _bRedTimer = [[Timer alloc]init:self.bRed limit:300 button:_bRedButton buttonImage:@"elder.png" buttonClearImage:@"elderi.png"];
+    _bBlueTimer = [[Timer alloc]init:self.bBlue limit:300 button:_bBlueButton buttonImage:@"ancient.png" buttonClearImage:@"ancienti.png"];
+    _dragonTimer = [[Timer alloc]init:self.dragon limit:360 button:_dragonButton buttonImage:@"dragon.png" buttonClearImage:@"dragoni.png"];
+    _baronTimer = [[Timer alloc]init:self.baron limit:420 button:_baronButton buttonImage:@"orgdemeera.png" buttonClearImage:@"orgdemeerai.png"];
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,13 +10,15 @@
 #import <UIKit/UIKit.h>
 
 @interface Timer : NSObject
-{
-    UILabel *timeLabel;
-    NSTimer *timer;
-    int count;
-    int time;
-}
-- (id) init:(UILabel *)label limit:(int) limit;
+@property (nonatomic) UILabel *timeLabel;
+@property (nonatomic) NSTimer *timer;
+@property (nonatomic)int count;
+@property (nonatomic)int time;
+@property (nonatomic)UIButton *button;
+@property (nonatomic)NSString *buttonImage;
+@property (nonatomic)NSString *buttonClearImage;
+- (id) init:(UILabel *)label limit:(int) limit button:(UIButton *)button buttonImage:(NSString *) buttonImage buttonClearImage:(NSString *) buttonClearImage;
+
 - (void) push;
 - (void) start;
 - (void) reset;

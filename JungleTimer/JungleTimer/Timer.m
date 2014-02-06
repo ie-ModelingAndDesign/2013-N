@@ -9,16 +9,19 @@
 #import "Timer.h"
 
 @implementation Timer
--(id)init:(UILabel *)label limit:(int) limit{
-    timeLabel = label;
-    count = limit;
-    time = count;
-    timeLabel.text = [NSString stringWithFormat:count%60<10?@"%d:0%d":@"%d:%d",count/60,count%60];
+-(id)init:(UILabel *)label limit:(int) limit button:(UIButton *)button buttonImage:(NSString *) buttonImage buttonClearImage:(NSString *) buttonClearImage{
+    _timeLabel = label;
+    _count = limit;
+    _time = _count;
+    _timeLabel.text = [NSString stringWithFormat:_count%60<10?@"%d:0%d":@"%d:%d",_count/60,_count%60];
+    _button = button;
+    _buttonImage = buttonImage;
+    _buttonClearImage = buttonClearImage;
     return self;
 }
 
 -(void)push{
-    if ([self->timer isValid]) {
+    if ([_timer isValid]) {
         [self reset];
         return;
     }
@@ -26,21 +29,23 @@
 }
 
 -(void)start{
-    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(action) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(action) userInfo:nil repeats:YES];
+    [_button setImage:[UIImage imageNamed:_buttonClearImage] forState:UIControlStateNormal];
 }
 
 -(void)reset{
-    [timer invalidate];
-    count=time;
-    timeLabel.text = [NSString stringWithFormat:count%60<10?@"%d:0%d":@"%d:%d",count/60,count%60];
+    [_timer invalidate];
+    _count=_time;
+    _timeLabel.text = [NSString stringWithFormat:_count%60<10?@"%d:0%d":@"%d:%d",_count/60,_count%60];
+    [_button setImage:[UIImage imageNamed:_buttonImage] forState:UIControlStateNormal];
 }
 
 -(void) action{
-    if (count <= 0) {
+    if (_count <= 0) {
         [self reset];
         return;
     }
-    count--;
-    timeLabel.text = [NSString stringWithFormat:count%60<10?@"%d:0%d":@"%d:%d",count/60,count%60];
+    _count--;
+    _timeLabel.text = [NSString stringWithFormat:_count%60<10?@"%d:0%d":@"%d:%d",_count/60,_count%60];
 }
 @end

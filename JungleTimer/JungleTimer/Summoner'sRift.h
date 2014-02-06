@@ -13,16 +13,17 @@
 @interface Summoner_sRift : UIViewController{
 }
 @property (weak, nonatomic) IBOutlet UILabel *pRed;
-
 @property (weak, nonatomic) IBOutlet UILabel *pBlue;
-
 @property (weak, nonatomic) IBOutlet UILabel *bRed;
-
 @property (weak, nonatomic) IBOutlet UILabel *bBlue;
-
-@property (weak, nonatomic) IBOutlet UILabel *dragon;
-
+@property (weak, nonatomic) IBOutlet UILabel *dragon; 
 @property (weak, nonatomic) IBOutlet UILabel *baron;
+@property (weak, nonatomic) IBOutlet UIButton *pRedButton;
+@property (weak, nonatomic) IBOutlet UIButton *pBlueButton;
+@property (weak, nonatomic) IBOutlet UIButton *bRedButton;
+@property (weak, nonatomic) IBOutlet UIButton *bBlueButton;
+@property (weak, nonatomic) IBOutlet UIButton *dragonButton;
+@property (weak, nonatomic) IBOutlet UIButton *baronButton;
 
 @property (nonatomic) P2P *p2p;
 @property (nonatomic) Timer *pRedTimer;
