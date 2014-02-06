@@ -146,8 +146,8 @@
 			children = (
 				2B5A3E8B1890CC9800BB7F97 /* P2P.h */,
 				2B5A3E8C1890CC9800BB7F97 /* P2P.m */,
-				2B823899183469BC006F2474 /* AppDelegate.h */,
 				2B82389A183469BC006F2474 /* AppDelegate.m */,
+				2B823899183469BC006F2474 /* AppDelegate.h */,
 				2B82389C183469BC006F2474 /* Main.storyboard */,
 				2B82389F183469BC006F2474 /* ViewController.h */,
 				2B8238A0183469BC006F2474 /* ViewController.m */,
